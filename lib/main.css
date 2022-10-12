@@ -35,6 +35,9 @@ a.text-decoration-none :hover{
     .ratio{
         height: 65vh;
     }
+    .navbar img{
+        height: 50px;
+    }
 }
 
 /* Animation */
