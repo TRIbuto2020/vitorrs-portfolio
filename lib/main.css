@@ -1,0 +1,79 @@
+header{
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 5px 5px rgba(19, 0, 16, 0.281);
+}
+
+.navbar img{
+    height: 70px;
+    margin-right: 15px;
+}
+
+section{
+    padding-top: 87px;
+    position: relative;
+    top: -47px;
+}
+
+.carousel-inner{
+    width: 60%;
+    margin: auto;
+    background-color: #fff;
+    border: 6px solid var(--bs-body-color);
+    border-radius: 16px;
+    box-shadow: 5px 5px 5px rgba(19, 0, 16, 0.281);
+}
+
+a.text-decoration-none :hover{
+    text-decoration: underline;
+}
+
+
+@media (max-width: 992px){
+    .ratio{
+        height: 65vh;
+    }
+}
+
+/* Animation */
+
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px,0,0);
+    }
+    100% { 
+        transform: translate3d(85px,0,0);
+    }
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.waves{
+    position: relative;
+    bottom: -2px;
+}
+
