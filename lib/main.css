@@ -11,12 +11,6 @@ header{
     margin-right: 15px;
 }
 
-section{
-    padding-top: 87px;
-    position: relative;
-    top: -47px;
-}
-
 .carousel-inner{
     width: 60%;
     margin: auto;
