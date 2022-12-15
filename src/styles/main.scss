@@ -28,10 +28,6 @@ body {
     background-size: contain;
     overflow-x: hidden;
     animation: background-rise 800s linear infinite;
-
-    @media (max-width: 780px){
-        animation: background-rise 1500s linear infinite;
-    }
 }
 
 section{
