@@ -1,0 +1,27 @@
+{
+  "name": "vitinho_frontend",
+  "version": "1.0.0",
+  "description": "Site pessoal com portfólio",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp watch",
+    "build": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TRIbuto2020/vitorrs-portfolio.git"
+  },
+  "author": "Vitor Rodrigues da Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TRIbuto2020/vitorrs-portfolio/issues"
+  },
+  "homepage": "https://github.com/TRIbuto2020/vitorrs-portfolio#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.56.2"
+  }
+}

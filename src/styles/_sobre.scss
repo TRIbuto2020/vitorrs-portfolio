@@ -1,0 +1,10 @@
+#sobre{
+
+    .desc{
+        font-size: 2rem;
+
+        @media (max-width: 780px){
+            font-size: 1.3rem;
+        }
+    }
+}

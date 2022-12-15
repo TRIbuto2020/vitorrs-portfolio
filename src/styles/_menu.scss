@@ -1,0 +1,105 @@
+@use 'var';
+@use 'ani';
+
+.menu{
+    
+    &__items{
+        margin-left: clamp(4rem, 20vw, 48rem);
+        position: relative;
+        z-index: 2;
+
+        &:hover{
+            & > .menu__items__item{
+                opacity: 0.3;
+            }
+            & ~ .menu__background__pattern {
+                background-size: 90vmin ;
+                opacity: 0.55;
+            }
+            & ~ .menu__background__image {
+                background-size: 150vmax;
+                opacity: 0.5;
+            }
+            & > .menu__items__item:hover {
+                animation: background-pan 5s linear infinite;
+                background: linear-gradient(
+                    to right,
+                    var.$ocBlue,
+                    var.$navy,
+                    var.$cyan,
+                    var.$ocBlue
+                    );
+                    background-size: 200%;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    white-space: nowrap; 
+                    opacity: 1;
+                }
+        }
+
+        &__item{
+            cursor: pointer;
+            display: block;
+            font-size: clamp(3rem, 8vw, 8rem);
+            padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
+            text-decoration: none;
+            transition: opacity 400ms ease;
+        }
+    }
+
+    &__background{
+        
+        &__pattern{
+            background: url(../../dist/img/bgmenu.png);
+            background-position: 0% 0%;
+            background-size: 110vmin ;
+            height: 100vh;
+            left: 0px;
+            position: absolute;
+            top: 0px;
+            transition: opacity 800ms ease, 
+            background-size 800ms ease,
+            background-position 800ms ease;
+            width: 100vw;
+            z-index: 1;
+            opacity: .9;
+            background-repeat: repeat-y;
+            animation: background-rise 70s linear infinite;
+            backdrop-filter: blur(5px) saturate(200%);
+            filter: brightness(150%);
+        }
+
+        &__image{
+            background-image: url("https://cepe.usp.br/wp-content/uploads/piscina-cepeusp-reabertura-2-sem-2017.jpg");
+            background-position: center 40%;
+            background-size: 180vmax;
+            height: 100vh;
+            left: 0px;  
+            opacity: 0.7;
+            position: absolute;
+            top: 0px;
+            transition: opacity 800ms ease,
+            background-size 800ms ease,
+            background-position 800ms ease;
+            width: 100%;
+            z-index: 0;
+        }
+    }
+        
+    &[data-active-index="0"] > .menu__background__image {
+            background-position: center 45%;
+        }
+        
+    &[data-active-index="1"] > .menu__background__image {
+            background-position: center 50%;
+        }
+        
+    &[data-active-index="2"] > .menu__background__image {
+            background-position: center 55%;
+        }
+        
+    &[data-active-index="3"] > .menu__background__image {
+            background-position: center 60%;
+        }
+}

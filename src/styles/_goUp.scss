@@ -1,0 +1,44 @@
+@use 'var';
+@use 'ani';
+
+.goUp{
+    background-color: var.$bgDark;
+    width: 114px;
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    left: calc(95vw - 128px);
+    bottom: calc(5vh);
+    transition: all 1s ease;
+    border: 2px solid var.$cyan;
+
+    &:hover{
+        background-color: var.$cyan;
+        border-color: var.$bgDark;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;        
+        a{
+            color: var.$bgDark;
+            transition: all 1s ease;
+            text-shadow: 0px 0px 15px rgb(var.$bgDark, 0.75);
+        }
+    }
+    
+    &--is-hidden{
+        opacity: 0;
+        transition: all 1s ease;
+    }
+    
+    a{
+        width: 100%;
+        margin-top: -4px;
+        text-decoration: none;
+        text-align: center;
+        font-size: 48px;
+        font-weight: 700;
+        color: var.$cyan;
+        transition: all 1s ease;
+        text-shadow: 0px 0px 15px rgb(var.$cyan, 0.75);
+    }
+}
