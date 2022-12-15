@@ -3,9 +3,16 @@
     .metodo{
         display: flex;
         justify-content: left;
-        align-items: center;
         width: 75%;
         margin-top: 40px;
+        @media (max-width: 780px){
+            align-items: center;
+
+            svg{
+                width: 32px;
+                height: 32px;
+            }
+        }
 
         .phones{
             display: flex;
@@ -18,11 +25,26 @@
         }
 
         a{
-            font-size: 48px;
+            font-size: 2.5rem;
+
+            @media (max-width: 780px){
+                font-size: 1rem;
+            }
         }
 
         &__info{
             margin-left: 40px;
+            max-width: 60%;
+            @media (max-width: 780px){
+                margin-left: 24px;
+            }
+        }
+
+        .teleph{
+            margin-top: 38px;
+            @media (max-width: 780px){
+                margin-top: 0;
+            }
         }
     }
 }
