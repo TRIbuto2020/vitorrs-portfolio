@@ -18,7 +18,6 @@
             }
             & ~ .menu__background__image {
                 background-size: 150vmax;
-                opacity: 0.5;
             }
             & > .menu__items__item:hover {
                 animation: background-pan 5s linear infinite;
@@ -67,7 +66,7 @@
             opacity: .9;
             background-repeat: repeat-y;
             animation: background-rise 70s linear infinite;
-            backdrop-filter: blur(5px) saturate(200%);
+            backdrop-filter: blur(5px) saturate(150%) brightness(50%);
             filter: brightness(150%);
         }
 
@@ -77,7 +76,7 @@
             background-size: 180vmax;
             height: 100vh;
             left: 0px;  
-            opacity: 0.7;
+            opacity: 1;
             position: absolute;
             top: 0px;
             transition: opacity 800ms ease,

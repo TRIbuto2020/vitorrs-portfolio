@@ -5,6 +5,7 @@
 @use 'portfolio';
 @use 'goUp';
 @use 'footer';
+@use 'contact';
 
 *{
     margin: 0;
@@ -12,6 +13,7 @@
     box-sizing: border-box;
     font-family: 'Lexend', sans-serif;
     color: white;
+    text-decoration: none;
 }
 
 html{
@@ -22,6 +24,8 @@ html{
 
 body {
     background-color: var.$bgDark;
+    background-image: url(../../dist/img/stars.png);
+    background-size: contain;
     overflow-x: hidden;
 }
 
