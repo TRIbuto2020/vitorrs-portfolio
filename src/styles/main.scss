@@ -4,12 +4,13 @@
 @use 'sobre';
 @use 'portfolio';
 @use 'goUp';
+@use 'footer';
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Lexend', sans-serif;
     color: white;
 }
 
@@ -35,6 +36,7 @@ section{
         font-size: 5rem;
         margin-bottom: 16px;
         letter-spacing: 2px;
+        font-weight: 700;
 
         @media (max-width: 780px){
             font-size: 3rem;

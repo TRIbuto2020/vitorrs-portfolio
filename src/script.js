@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', function() {
         const posicaoAtual = window.scrollY;
         
-        if (posicaoAtual < alturaMenu - 20) {
+        if (posicaoAtual < alturaMenu - 100) {
             ocultagoUp();
         } else {
             exibegoUp();

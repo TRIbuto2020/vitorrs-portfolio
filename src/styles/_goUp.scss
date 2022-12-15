@@ -13,6 +13,7 @@
     bottom: 5vh;
     transition: all 1s ease;
     border: 2px solid var.$cyan;
+    margin-bottom: 5vh;
     
     @media (max-width: 780px){
         left: calc(95vw - 90px);
