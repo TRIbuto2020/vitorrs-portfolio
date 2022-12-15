@@ -10,9 +10,15 @@
     justify-content: center;
     position: sticky;
     left: calc(95vw - 128px);
-    bottom: calc(5vh);
+    bottom: 5vh;
     transition: all 1s ease;
     border: 2px solid var.$cyan;
+    
+    @media (max-width: 780px){
+        left: calc(95vw - 90px);
+        width: 80px;
+        bottom: 30px;
+    }
 
     &:hover{
         background-color: var.$cyan;
