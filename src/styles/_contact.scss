@@ -1,49 +1,40 @@
+@use 'var';
+
 #contato{
 
     .metodo{
-        display: flex;
-        justify-content: left;
-        width: 75%;
-        margin-top: 40px;
+        display: block;
+        text-align: center;
+        width: 80%;
+        border: 3px solid var.$ocBlue;
+        margin: 64px auto;
+        padding: 8px;
+        border-radius: 40px;
+        font-size: 2.5rem;
+        transition: all 1s ease;
+
+        span{
+            transition: all 1s ease;
+        }
+
+        &:hover{
+            background-color: var.$ocBlue;
+            color: var.$bgDark;
+            border-color: var.$bgDark;
+            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;        
+
+            span{
+                color: var.$bgDark;
+                transition: all 1s ease;
+            }
+        }
+
+
         @media (max-width: 780px){
-            align-items: center;
-
-            svg{
-                width: 32px;
-                height: 32px;
-            }
-        }
-
-        .phones{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            a:first-child{
-                margin-bottom: 20px;
-            }
-        }
-
-        a{
-            font-size: 2.5rem;
-
-            @media (max-width: 780px){
-                font-size: 1rem;
-            }
-        }
-
-        &__info{
-            margin-left: 40px;
-            max-width: 60%;
-            @media (max-width: 780px){
-                margin-left: 24px;
-            }
-        }
-
-        .teleph{
-            margin-top: 38px;
-            @media (max-width: 780px){
-                margin-top: 0;
+            font-size: 1.5rem;
+            
+            span{
+                display: block;
             }
         }
     }
