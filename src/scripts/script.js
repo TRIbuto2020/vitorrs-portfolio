@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+    AOS.init();
+
     const menu = document.getElementById("menu");
     const alturaMenu = menu.clientHeight;
 

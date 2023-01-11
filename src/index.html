@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vitor R.S.</title>
-    <link rel="stylesheet" href="dist/css/main.css">
-    <link rel="shortcut icon" href="dist/img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap" rel="stylesheet">
@@ -25,19 +26,28 @@
 
     <section  id="sobre">
         <div class="centro">
-            <h1 class="section__title">Sobre</h1>
-            <p class="desc"><span class="magic">Vitor Rodrigues da Silva</span> é formado em Ciências Biológicas pela USP, aficcionado por esportes e web design.<br/><br/>
+            <h1 class="section__title" data-aos="zoom-in-down" data-aos-duration="3000">Sobre</h1>
+            <p class="desc" data-aos="zoom-in-up" data-aos-duration="3000"><span class="magic">Vitor Rodrigues da Silva</span> é formado em Ciências Biológicas pela USP, aficcionado por esportes e web design.<br/><br/>
             Atualmente pesquisa fisiologia cardiovascular como Mestrando na USP e segue com sua paixão pelo triathlon!<br/><br/>
             Também cursa desenvolvimento Web Full-Stack pela EBAC, com experiência prévia em Python e R.</p>
         </div>
     </section>
     <section  id="portfolio">
         <div class="centro">
-            <h1 class="section__title">Portfólio</h1>
-            <div class="grid">
-                <div class="grid__blob">1</div>
-                <div class="grid__blob">2</div>
-                <div class="grid__blob">3</div>
+            <h1 class="section__title" data-aos="zoom-in-down" data-aos-duration="3000">Portfólio</h1>
+            <div class="grid" data-aos="zoom-out" data-aos-duration="3000">
+                <div class="grid__blob grid__blob--yourname">
+                    <h3 class="grid__blob__title">Your Name</h3>
+                    <a href="https://yourname.vercel.app/" class="grid__blob__button" target="_blank">Visite o site!</a>
+                </div>
+                <div class="grid__blob grid__blob--porto">
+                    <h3 class="grid__blob__title">Porto Aventura</h3>
+                    <a href="https://portoaventura.vercel.app/" class="grid__blob__button" target="_blank">Visite o site!</a>
+                </div>
+                <div class="grid__blob grid__blob--niver">
+                    <h3 class="grid__blob__title">Aniversário</h3>
+                    <a href="https://aniversario-vitinho-2023.vercel.app" class="grid__blob__button" target="_blank">Visite o site!</a>
+                </div>
                 <div class="grid__blob">4</div>
                 <div class="grid__blob">5</div>
                 <div class="grid__blob">6</div>
@@ -50,9 +60,9 @@
 
     <section  id="contato">
         <div class="centro">
-            <h1 class="section__title">Contato</h1>
-                <a class="metodo" href="mailto:vitor2000rs@gmail.com">E-mail:   vitor2000rs<span>@gmail.com</span></a>
-                <a class="metodo" href="https://wa.me/+5511975895809" target="_blank" title="Mensagem por Whatsapp">Whatsapp:   (11) 97589-5809</a>
+            <h1 class="section__title" data-aos="zoom-in-down" data-aos-duration="3000">Contato</h1>
+            <a class="metodo" href="mailto:vitor2000rs@gmail.com" data-aos="fade-down" data-aos-duration="2000">E-mail:   vitor2000rs<span>@gmail.com</span></a>
+            <a class="metodo" href="https://wa.me/+5511975895809" target="_blank" title="Mensagem por Whatsapp" data-aos="fade-up"  data-aos-duration="2000">Whatsapp:   (11) 97589-5809</a>
         </div>
     </section>
 
@@ -80,6 +90,7 @@
         </div>
     </footer>
     
-    <script src="./dist/js/script.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </body>
 </html>

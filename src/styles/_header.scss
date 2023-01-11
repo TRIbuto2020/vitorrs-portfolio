@@ -1,0 +1,68 @@
+@use 'var';
+
+.header{
+    z-index: 2;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    background-color: var.$bgDark;
+    transition: all .5s linear 3s;
+
+    &--is-hidden{
+        background-color: transparent;
+        height: 0;
+        opacity: 0;
+        visibility: hidden;
+
+        *{
+            height: 0;
+        }
+
+    }
+
+    &__container{
+        padding: 8px 36px;
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 768px){
+            padding: 0 12px 0 20px;
+        }
+    }
+
+    &__logo{
+        max-width: 80px;
+        width: 100%;
+        margin: 5px;
+        transition: all .5s linear;
+
+        @media (max-width: 768px){
+            max-width: 64px;
+        }
+    }
+
+    &__links{
+        display: flex;
+
+        &__item{
+            margin: 5px;
+
+            &:first-child{
+                transition: all .5s linear;
+            }
+        }
+    }
+
+    .button{
+        height: 50px;
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 768px){
+            font-size: 13px;
+            padding: 8px 11px;
+            height: 40px;
+            letter-spacing: 0;
+        }
+    }
+}

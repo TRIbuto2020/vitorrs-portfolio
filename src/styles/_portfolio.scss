@@ -29,7 +29,30 @@
         position: absolute;
         border: 2px solid var.$ocBlue;
 
-        
+        &__title{
+            z-index: 2;
+        }
+
+        &__button{
+            display: none;
+            text-align: center;
+            z-index: 2;
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        &::before{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            content: '';
+            background-color: var.$ocBlue;
+            backdrop-filter: blur(2px) brightness(40%);
+            border-radius: 16px;
+            transition: background-color .2s linear;
+        }
         &:nth-child(-n+3){
             top: 0;
         }
@@ -45,7 +68,7 @@
         &:nth-child(n+7):nth-child(-n+9){
             top: 70%;
         }
-
+        
         &:hover{
             height: 50vh;
             width: 50vw;
@@ -56,14 +79,102 @@
             transition: all 1s ease 0.03s;
             z-index: 2;
             background-color: var.$bgDark;
-
+            
             @media (max-width: 1080px){
                 width: 75vw;
+            }
+            
+            .grid__blob{
+                &__title{
+                    display: none;
+                }
+                
+                &__button{
+                    display: block;
+                }
+            }
+
+            &::before{
+                background-color: transparent;
+                border-radius: 24px;
+                transition: background-color 1s ease;
             }
         }
         &:hover:nth-child(n+4):nth-child(-n+9){
             top:0;
         }
+
+        //Variantes//
+
+        &--yourname{
+            background-image: url('../img/yourname.png');
+
+            .grid__blob__button:hover{
+                animation: background-pan 5s linear infinite;
+                background: linear-gradient(
+                    to right,
+                    rgb(20, 188, 240),
+                    rgb(185, 0, 121),
+                    rgb(20, 188, 240)
+                );
+                background-size: 200%;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            &:hover{
+                border-color: rgb(85, 0, 55);
+                background-size: cover;
+            }
+        }
+
+        &--porto{
+            background-image: url('../img/porto.png');
+
+            .grid__blob__button:hover{
+                animation: background-pan 5s linear infinite;
+                background: linear-gradient(
+                    to right,
+                    rgb(233, 218, 154),
+                    rgb(152, 237, 248),
+                    rgb(233, 218, 154)
+                );
+                background-size: 200%;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            &:hover{
+                border-color: rgb(85, 65, 0);
+                background-size: cover;
+            }
+        }
+        
+        &--niver{
+            background-image: url('../img/niver.png');
+
+            .grid__blob__button:hover{
+                animation: background-pan 5s linear infinite;
+                background: linear-gradient(
+                    to right,
+                    rgb(0, 133, 22),
+                    rgb(147, 163, 0),
+                    rgb(0, 133, 22)
+                );
+                background-size: 200%;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            &:hover{
+                border-color: rgb(0, 58, 0);
+                background-size: cover;
+            }
+        }
+        
     }
 }
 
