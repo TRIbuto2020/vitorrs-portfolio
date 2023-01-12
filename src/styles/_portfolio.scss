@@ -81,7 +81,7 @@
             opacity: 1;
             top: 0;
             left: 0;
-            transition: all 1s ease 0.03s;
+            transition: all 1s ease 0.2s;
             z-index: 2;
             background-color: var.$bgDark;
             
@@ -180,6 +180,56 @@
             }
         }
         
+        &--patchoca{
+            background-image: url('../img/patchoca.png');
+            background-position: center;
+
+            &::before{
+                backdrop-filter: none;
+            }
+
+            p{
+                display: none;
+                font-size: 24px;
+                font-weight: 700;
+            }
+
+            &:hover{
+                border-bottom-color: rgb(204, 0, 160);
+                border-right-color: rgb(204, 0, 160);
+                background-size: cover;
+
+                p{
+                    display: block;
+                    position: absolute;
+                    bottom: 25px;
+                }
+
+            }
+        }
+
+        &--refruta{
+            background-image: url('../img/refruta.png');
+
+            .grid__blob__button:hover{
+                animation: background-pan 5s linear infinite;
+                background: linear-gradient(
+                    to right,
+                    rgb(221, 110, 0),
+                    rgb(0, 155, 182),
+                    rgb(221, 110, 0)
+                );
+                background-size: 200%;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            &:hover{
+                border-color: rgb(228, 110, 0);
+                background-size: cover;
+            }
+        }
     }
 }
 
