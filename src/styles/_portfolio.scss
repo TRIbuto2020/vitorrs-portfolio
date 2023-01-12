@@ -32,6 +32,7 @@
         &__title{
             z-index: 2;
             text-align: center;
+            margin: auto;
 
             @media (max-width: 640px){
                 font-size: 12px;
@@ -39,11 +40,10 @@
         }
 
         &__button{
-            display: none;
+            visibility: hidden;
             text-align: center;
             z-index: 2;
-            font-size: 30px;
-            font-weight: 700;
+            font-size: 0px;
         }
 
         &::before{
@@ -95,7 +95,11 @@
                 }
                 
                 &__button{
-                    display: block;
+                    visibility: visible;
+                    font-size: 30px;
+                    font-weight: 700;
+                    transition: all 1s ease 0.2s;
+
                 }
             }
 
@@ -189,20 +193,27 @@
             }
 
             p{
-                display: none;
-                font-size: 24px;
+                visibility: hidden;
                 font-weight: 700;
+                text-align: center;
+                font-size: 0px;
+                
             }
-
+            
             &:hover{
                 border-bottom-color: rgb(204, 0, 160);
                 border-right-color: rgb(204, 0, 160);
                 background-size: cover;
-
+                
                 p{
-                    display: block;
+                    visibility: visible;
                     position: absolute;
+                    font-size: 24px;
                     bottom: 25px;
+                    transition: all 1s ease 0.2s;
+                    @media (max-width: 640px) {
+                        font-size: 18px;
+                    }
                 }
 
             }
