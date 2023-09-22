@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <section id="menu" class="menu">
         <div class="menu__items">
@@ -24,54 +26,107 @@
         <div class="menu__background__image"></div>
     </section>
 
-    <section  id="sobre">
+    <section id="sobre">
         <div class="centro">
             <h1 class="section__title" data-aos="zoom-in-down" data-aos-duration="3000">Sobre</h1>
-            <p class="desc" data-aos="zoom-in-up" data-aos-duration="3000"><span class="magic">Vitor Rodrigues da Silva</span> é formado em Ciências Biológicas pela USP, aficcionado por esportes e web design.<br/><br/>
-            Atualmente pesquisa fisiologia cardiovascular como Mestrando na USP e segue com sua paixão pelo triathlon!<br/><br/>
-            Também cursa desenvolvimento Web Full-Stack pela EBAC, com experiência prévia em Python e R.</p>
+            <p class="desc" data-aos="zoom-in-up" data-aos-duration="3000"><span class="magic">Vitor Rodrigues da
+                    Silva</span> é formado em Ciências Biológicas pela USP, aficcionado por esportes e web
+                design.<br /><br />
+                Atualmente pesquisa fisiologia cardiovascular como Mestrando na USP e segue com sua paixão pelo
+                triathlon!<br /><br />
+                Também cursa desenvolvimento Web Full-Stack pela EBAC, com experiência prévia em Python e R.</p>
         </div>
     </section>
-    <section  id="portfolio">
+    <section id="portfolio">
         <div class="centro">
             <h1 class="section__title" data-aos="zoom-in-down" data-aos-duration="3000">Portfólio</h1>
-            <div class="grid" data-aos="zoom-out" data-aos-duration="3000">
-                <div class="grid__blob grid__blob--yourname">
-                    <h3 class="grid__blob__title">Your Name</h3>
-                    <a href="https://yourname.vercel.app/" class="grid__blob__button" target="_blank">Visite o site!</a>
+            <div class="slideshow-container" data-aos="zoom-in-up" data-aos-duration="3000">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="img/porto.png" style="width:100%">
+                    <div class="text fade">
+                        <div>
+                            <p class="text__title">Porto Aventura</p>
+                            <p class="text__tech">Feito com: JS (Bootstrap)</p>
+                        </div>
+                        <a href="https://portoaventura.vercel.app/" class="magic">Visite!</a>
+                    </div>
                 </div>
-                <div class="grid__blob grid__blob--porto">
-                    <h3 class="grid__blob__title">Porto Aventura</h3>
-                    <a href="https://portoaventura.vercel.app/" class="grid__blob__button" target="_blank">Visite o site!</a>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="img/yourname.png" style="width:100%">
+                    <div class="text fade">
+                        <div>
+                            <p class="text__title">Your Name</p>
+                            <p class="text__tech">Feito com: HTML, SCSS, JS</p>
+                        </div>
+                        <a href="https://yourname.vercel.app/" class="magic">Visite!</a>
+                    </div>
                 </div>
-                <div class="grid__blob grid__blob--niver">
-                    <h3 class="grid__blob__title">Aniversário</h3>
-                    <a href="https://aniversario-vitinho-2023.vercel.app" class="grid__blob__button" target="_blank">Visite o site!</a>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="img/niver.png" style="width:100%">
+                    <div class="text fade">
+                        <div>
+                            <p class="text__title">Contagem Regressiva</p>
+                            <p class="text__tech">Feito com: HTML, SCSS, JS</p>
+                        </div>
+                        <a href="https://aniversario-vitinho-2023.vercel.app/" class="magic">Visite!</a>
+                    </div>
                 </div>
-                <div class="grid__blob grid__blob--patchoca">
-                    <h3 class="grid__blob__title">Patchoca S.C.</h3>
-                    <p>Criação da identidade visual, logo e camisetas!</p>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="img/efood.png" style="width:100%">
+                    <div class="text fade">
+                        <div>
+                            <p class="text__title">App Restaurantes</p>
+                            <p class="text__tech">Feito com: React (TS)</p>
+                        </div>
+                        <a href="https://efood-vitinho.vercel.app/" class="magic">Visite!</a>
+                    </div>
                 </div>
-                <div class="grid__blob grid__blob--refruta">
-                    <h3 class="grid__blob__title">RêFruta</h3>
-                    <a href="https://refruta.eco.br" class="grid__blob__button" target="_blank">Visite o site!</a>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="img/nabaiji.png" style="width:100%">
+                    <div class="text fade">
+                        <div>
+                            <p class="text__title">Nabaiji</p>
+                            <p class="text__tech">Feito com: HTML, SCSS, JS</p>
+                        </div>
+                        <a href="https://nabaiji.vercel.app/" class="magic">Visite!</a>
+                    </div>
                 </div>
-                <div class="grid__blob grid__blob--ddv">
-                    <h3 class="grid__blob__title">Diário de Viagem</h3>
-                    <a href="https://diario-de-viagem-vitinho.vercel.app/" class="grid__blob__button" target="_blank">Visite o site!</a>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="img/patchoca.png" style="width:100%">
+                    <div class="text fade">
+                        <div>
+                            <p class="text__title">Patchoca S.C.</p>
+                            <p class="text__tech">Criação de uniforme e identidade visual!</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="grid__blob">7</div>
-                <div class="grid__blob">8</div>
-                <div class="grid__blob">9</div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
+        </div>
         </div>
     </section>
 
-    <section  id="contato">
+    <section id="contato">
         <div class="centro">
             <h1 class="section__title" data-aos="zoom-in-down" data-aos-duration="3000">Contato</h1>
-            <a class="metodo" href="mailto:vitor2000rs@gmail.com" data-aos="fade-down" data-aos-duration="2000">E-mail:   vitor2000rs<span>@gmail.com</span></a>
-            <a class="metodo" href="https://wa.me/+5511975895809" target="_blank" title="Mensagem por Whatsapp" data-aos="fade-up"  data-aos-duration="2000">Whatsapp:   (11) 97589-5809</a>
+            <a class="metodo" href="mailto:vitor2000rs@gmail.com" data-aos="fade-down" data-aos-duration="2000">E-mail:
+                vitor2000rs<span>@gmail.com</span></a>
+            <a class="metodo" href="https://wa.me/+5511975895809" target="_blank" title="Mensagem por Whatsapp"
+                data-aos="fade-up" data-aos-duration="2000">Whatsapp: (11) 97589-5809</a>
         </div>
     </section>
 
@@ -82,24 +137,29 @@
 
         <div>
             <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
                 <defs>
-                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                    <path id="gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
                 </defs>
                 <g class="parallax">
-                    <use xlink:href="#gentle-wave" x="48" y="0"/>
-                    <use xlink:href="#gentle-wave" x="48" y="3"/>
-                    <use xlink:href="#gentle-wave" x="48" y="5"/>
-                    <use xlink:href="#gentle-wave" x="48" y="7"/>
+                    <use xlink:href="#gentle-wave" x="48" y="0" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" />
                 </g>
             </svg>
         </div>
         <div class="container">
-            Vitor R.S. &copy; - 2022
+            <p id="footer">
+
+            </p>
         </div>
     </footer>
-    
+
     <script src="scripts/script.js"></script>
+    <script src="scripts/slides.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </body>
+
 </html>
